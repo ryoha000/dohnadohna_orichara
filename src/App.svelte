@@ -1,36 +1,16 @@
 <script lang="ts">
-	import CanvasComponent from "./components/Canvas.svelte";
-	export let name: string;
+	import Inputs from './components/Inputs.svelte'
 </script>
 
 <main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-	<CanvasComponent />
+	<h1>ドーナドーナ　オリキャラツール</h1>
+	<Inputs />
 </main>
-
-<svelte:head>
-	<script src="opencv.js" />
-</svelte:head>
 
 <style>
 	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
+		padding: 1rem;
+		max-width: 640px;
 		margin: 0 auto;
-	}
-
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
 	}
 </style>
